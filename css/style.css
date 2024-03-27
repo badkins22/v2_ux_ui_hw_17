@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Grid & Hero CSS */
+  #heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    "HeroImage HeroImage"
+    "HeroImage HeroImage";
+  }
+  #PrimaryCTA {
+    background-color:#0D734D;
+    border-radius: 25px;
+    margin: 25px;
+    color: white;
+    grid-area: CTA;
+    justify-content: 0px 0%;
+    cursor: pointer;
+    height: 47px;
+    width: 295px;
+    font-size: 24px;
+  }
+  .heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+    background-image: url("../images/Hero\ Image.png");
+    grid-area: HeroImage
+  }
+  #headline {
+    margin: 5%;
+  }
+  
+  /* Navigation CSS */
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+    background-color: #3E3B32;
+    color: white;
+    align-items: right;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  #navigation {
+    display: flex;
+    width: 25%;
+  }
+  .highlight {
+    color: #FF6200;
+    font-weight: 700;
+  }
+  
+  /* Typography CSS */
+  
+  h1 {
+    font-size: 60px;
+    margin: 0px 0px;
+    color: #0D734D;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0px 0px;
+  }
+  
+  h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+  }
+   /* Footer CSS */
+   #footerBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+    background-color: #3E3B32;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  #footer {
+    display: flex;
+    width: 30%;
+    text-decoration: underline;
+  }
+  #footer p {
+    cursor: pointer;
+    text-decoration: none;
+  }
