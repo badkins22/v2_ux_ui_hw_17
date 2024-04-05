@@ -33,7 +33,7 @@ body {
     align-items: center;
     display: flex;
     position: relative;
-    background-image: url("../images/Hero\ Image.png");
+    background-image: url("../images/Screenshot\ 2024-04-04\ 193909.png");
     grid-area: HeroImage
   }
   #headline {
@@ -41,6 +41,9 @@ body {
   }
   
   /* Navigation CSS */
+  #hamburger {
+    display: none
+  }
   #navBar {
     display: flex;
     flex-direction: row;
@@ -53,7 +56,7 @@ body {
   }
   #navigation {
     display: flex;
-    width: 25%;
+    width: 500px;
   }
   .highlight {
     color: #FF6200;
@@ -92,10 +95,57 @@ body {
   }
   #footer {
     display: flex;
-    width: 30%;
+    width: 750px;
     text-decoration: underline;
   }
   #footer p {
     cursor: pointer;
     text-decoration: none;
   }
+@media (max-width:1300px){
+    #headline {
+      background-color: #fdba7fc9;
+    }
+      .heroGridArea {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        display: flex;
+        position: relative;
+        background-image: url("../images/0F57B483-80B8-4056-A5A3-5FCA59AD9551\ 1.png");
+        grid-area: HeroImage
+      }
+      #footer {
+        display:flex;
+        flex-direction:column
+      }
+      #hamburger {
+        display: none
+      }
+  }
+@media (max-width:600px){
+  #headline {
+    background-color: #fdba7fc9;
+  }
+    .heroGridArea {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      display: flex;
+      position: relative;
+      background-image: url("../images/0F57B483-80B8-4056-A5A3-5FCA59AD9551\ 1.png");
+      grid-area: HeroImage;
+    }
+    #navigation {
+      display: none;
+    }
+    #footer {
+      display:flex;
+      flex-direction:column
+    }
+    #hamburger {
+      display: inline-flex;
+    }
+}
